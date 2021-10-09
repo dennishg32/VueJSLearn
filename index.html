@@ -10,7 +10,12 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <img :class="gender" v-bind:src="picture" :alt="`${firstname} ${lastname}`" />
+        <h1>{{firstname}} {{lastname}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button :class="gender">Get Random User</button>
+    </div>
 
     <script src="https://unpkg.com/vue@3.0.5"></script>
     <script src="app.js"></script>
